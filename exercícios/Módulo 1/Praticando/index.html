@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="arquivos\favicon.ico" type="image/x-icon">
+    <title>Praticando tags</title>
+</head>
+<body>
+    <h1>Revisando Tags</h1>
+
+    <p>Este documento foi criado com o intúito de se praticar tags importantes aprendidas no curso em vídeo. Dentre as tags aprendidas, também pude aprender palavras reservadas que auxiliam na criação de conteúdos ou de esboços. No parágrafo abaixo, será criado com o recurso <q>Lorem</q> que cria palavras aleatórias em latim para criação de esboços de texto.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores officiis molestias quo placeat modi non blanditiis quis autem repellendus exercitationem excepturi animi itaque numquam, hic dolore repudiandae magni voluptatum?</p>
+
+    <h2>Espaçamentos</h2>
+
+    <p>Para fazer espaçamentos utiliza-se a tag &lt;b&gt;.</p>
+
+    <h2>Mostrando as tags</h2>
+
+    <p>Para colocar as setinhas nas tags para serem exibidas ao usuário do site, é necessário utilizar o recurso &lt;TAG ESCOLHIDA&gt;</p>
+
+    <h2>Adicionadno símbolos</h2>
+
+    <p>Para adicionar um símbolo, é necessário colocar o e comercial (&) antes da palavra reservada do símbolo, para que seja reproduzido no documento web.</p>
+    <p>Exemplo: <br> &reg;<br>&copy;<br>&trade;<br>&euro;<br>&pound;<br></p>
+
+    <h2>Adicionando emogis</h2>
+    <p>Para adionar emogis, é necessário colocar 3 caracteres especificos em html para dizer a linguagem que o valor que vai ser inserido será em hexadecimal. <br>Os valores são: &#x <br>Logo após são inseridos os valores hexadecimais respectivos ao emogi desejado.</p>
+    <p>O site geralmente utilizado para a busca de emogis e seus valores exadecimais é no <strong>emogipedia</strong>.</p>
+    <p>Exemplo de emogis buscados: <br> &#x1f596; <br> &#x1F635; <br> &#x1F642;&#x200D; <br> &#x2764;&#xFE0F;</p>
+
+    <h2>Tag para inserção de imagens</h2>
+
+    <p>Para inserir imagens em um documento HTML utiliza-se a tag &lt;img&gt;. Esta tag geralmente vem com os atributos: <dl>
+        <dt>src</dt>
+        <dd><q>Source</q>, atributo para localizar o documento, seja o diretório de armazenamento local, ou um endereço web da imagem.</dd>
+        <dt>alt</dt>
+        <dd>É o atributo para descrição de imagens, nele coloca-se uma breve descrição do que se trata a imagen, (essa descrição não aparece ao usuário, somente servirá para buscadores acharem ela na web).</dd>
+    </dl></p>
+    <h4>Exemplode aplicação de imagem local:</h4>
+    <img src="imagens/imagem06.jpg" alt="cachorrinho simpático" style="width: 200px;"> 
+    <!-- nesta tag eem especial foi necessário diminuí-la com o atributo style de css para que coubesse melhor na página. -->
+    <h4> Exemplo de aplicação de imagem da web:</h4>
+    <img src="https://adimax.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/05/cuidados-filhote-de-cachorro.jpg.webp" alt="Cachorro fofinho da web" style="width: 200px;">
+
+    <h2>Adicionando favicon no site</h2>
+    <p>Favicons geralmente são suportados somente em formatos .ico, se a iamgem não for desse formato é possível fazer a converção em sites gratúitos e utilizar no site. Para inseri-lo basta somente linkar ele no documento html com a tag &lt;link&gt; no head do documento, depois adicionar o repositório de destino do favicon desejado.</p>
+</body>
+</html>

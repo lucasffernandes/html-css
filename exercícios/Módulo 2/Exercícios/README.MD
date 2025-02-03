@@ -1,0 +1,1 @@
+        Pensando na lógica de caixas, para alinhar um elemento (ou uma div) nós devemos aplicar as configurações na caixa "mãe", para que seja aplicada a caixa "filha", caso contrário não ira ser centralizada, ou configurada.

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    background-color: #3DD6D0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container_cima {
+    background-color: #71F79F;
+    border-radius: 10px; /* Alterado para um valor fixo para arredondar levemente os cantos */
+    width: 90%; /* Usar porcentagem para que a largura seja proporcional à largura da tela */
+    max-width: 1000px; /* Definir um limite máximo de largura */
+    height: auto; /* Ajustar a altura automaticamente */
+    min-height: 50vh; /* Definir uma altura mínima */
+    display: grid;
+    margin: 0 auto;
+    place-items: center;
+    padding: 20px; /* Adicionar um pouco de padding para dar espaço interno */
+    box-sizing: border-box; /* Incluir padding e bordas na largura e altura totais */
+}
+
+.container_cima .foto {
+    max-width: 50%;
+    max-height: 80%;
+    border-radius: 50%;
+}
+
+/* Media query para ajustar em telas menores */
+@media (max-width: 768px) {
+    .container_cima {
+        width: 100%; /* Para telas menores, usar toda a largura disponível */
+        padding: 10px; /* Reduzir o padding em telas menores */
+    }
+
+    .container_baixo {
+        width: 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container_cima {
+        width: 70%; /* Para telas menores, usar toda a largura disponível */
+        padding: 10px; /* Reduzir o padding em telas menores */
+    }
+    .container_baixo {
+        width: 70%;
+        padding: 10px;
+    }
+}
+
+.container_baixo {
+    display: grid;
+    place-items: center;
+}
+
+.container_baixo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container_baixo li {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+    color: #000000;
+}
+
+.container_baixo li a {
+    color: #402D1C;
+    margin-left: 10px; 
+}
+
+h1 {
+    text-align: center;
+    color: #212126;
+    text-shadow: 1px 1px 5px #244933e0;
+}
+
+h2 {
+    text-align: center;
+    color: #402D1C;
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+}
+
+.container_baixo img {
+    max-width: 50px; 
+    max-height: 50px; 
+}
