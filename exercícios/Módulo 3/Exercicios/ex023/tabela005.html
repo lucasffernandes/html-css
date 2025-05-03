@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            background-color: black;
+            color: white;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #linha-destaque {
+            background-color: rgb(198, 81, 81);
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.csexo {
+            background-color: yellow;
+        }
+
+        .cgroup {
+            background-color: blueviolet;
+        }
+
+    </style>
 </head>
 <body>
+
+    <h1>Exercício de Tabela</h1>
+
     <table>
+        
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgroup" span="2">
+        </colgroup>
+
         <caption>Cadastro</caption>
         <tr>
             <th scope="col"> Nome</th>
@@ -26,7 +76,7 @@
             <td>28</td>
             <td>Programador</td>
         </tr>
-        <tr>
+        <tr id="linha-destaque">
             <td>Gustavo</td>
             <td>M</td>
             <td>42</td>
