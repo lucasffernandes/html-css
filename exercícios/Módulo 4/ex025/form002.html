@@ -6,10 +6,22 @@
     <title>Formulário 02</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get">
-        <p><input type="text"></p>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">usuário</label> 
+            <input type="text" name="usu" id="iusuario" required minlength="3" maxlength="15" size="17" placeholder="ensira seu usuário">
+        </p>
 
+        <p>
+            <label for="isenha">senha</label> 
+            <input type="password" name="sen" id="isenha" required minlength="3" maxlength="6" size="12" placeholder="ensira sua senha">
+        </p>
 
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
     </form>
 </body>
 </html>
