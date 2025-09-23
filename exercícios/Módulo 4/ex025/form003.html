@@ -7,31 +7,49 @@
 </head>
 <body>
     <h1>Teste De Formulário</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required value="insira seu nome">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="1" max="10" step="0.5" value="0.5">
-        </p>
-        <p>
-            <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes" value="2">
-        </p>
-        <p>
-            <label for="iagendamento">Agendamento</label>
-            <input type="date" name="agendamento" id="iagendamento" value="10-09-2025">
-        </p>
-        <p>
-            <label for="ihoras">Horário</label>
-            <input type="time" name="horas" id="ihoras" value="15:30">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required value="insira seu nome">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel01">Telefone 01</label>
+                <input type="tel" name="tel01" id="itel01" placeholder="xxxx-xxxx" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <label for="itel02">Telefone 02</label>
+                <input type="tel" name="tel02" id="itel02" placeholder="(xx)xxxxx-xxxx" pattern="^\(d{2}/)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da escola</legend>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="1" max="10" step="0.5" value="0.5">
+            </p>
+            <p>
+                <label for="imes">Período Letivo</label>
+                <input type="month" name="mes" id="imes" value="2">
+            </p>
+            <p>
+                <label for="iagendamento">Agendamento</label>
+                <input type="date" name="agendamento" id="iagendamento" value="10-09-2025">
+            </p>
+            <p>
+                <label for="ihoras">Horário</label>
+                <input type="time" name="horas" id="ihoras" value="15:30">
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
     </form>
 </body>
 </html>
