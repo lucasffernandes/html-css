@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>CheckBox & radio button</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sex" id="imas" checked="masc"><br>
+            <label for="ifem">Feminino</label>
+            <input type="radio" name="sex" id="ifem" value="fem">
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ifut">Futebol</label>
+            <input type="checkbox" name="fut" id="ifut" checked><br>
+            <label for="ibas">Basquet</label>
+            <input type="checkbox" name="bas" id="ibas"> <br>
+            <label for="itenis">Tenis</label>
+            <input type="checkbox" name="tenis" id="itenis"><br>
+            <label for="ixa">Xadrez</label>
+            <input type="checkbox" name="xa" id="ixa" checked><br>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+        
+    
+</body>
+</html>
