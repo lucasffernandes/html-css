@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007</title>
+    <style>
+        #titulo{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <label for="iselecao">Estado</label>
+        <select name="selecao" id="iselecao" required>
+        <option value="" selected >--- Escolha ---</option>
+
+        <optgroup>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </optgroup>
+        <optgroup>
+            <option value="SP">São Paulo</option>
+            <option value="AL">Alagoas</option>
+        </optgroup>
+        
+        </select>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="Prof" list="iprof">
+            <datalist id="iprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ADV">Advogado</option>
+            </datalist>
+        </p>
+
+        <p id="titulo">Digite sua sugestão:</p>
+
+        <textarea name="txt" id="itxt" rows="10" cols="50"></textarea>
+        
+    </form>
+
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+</body>
+</html>
