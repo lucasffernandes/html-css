@@ -6,13 +6,28 @@
     <title>Formulário 008</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
 
-        <label for="inum01">Digite um número</label>
-        <input type="number" name="num01" id="inum01" min="1" max="10" required>
+        <p>
+            <label for="inu1">Digite um número: </label>
+            <input type="number" name="n1" id="in1" min="1" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
 
-        <label for="inum02">Digite um número</label>
-        <input type="number" name="num01" id="inum02" min="1" max="10" required>
+        <p>
+            <label for="in2">Digite um número: </label>
+            <input type="number" name="n2" id="in2" min="1" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
     </form>
 </body>
 </html>
