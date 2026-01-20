@@ -1,0 +1,4 @@
+Capítulo 25/ Aula 10 - CONFIGURANDO O LAYOUT DO PROJETO
+
+* Text-indent -> componente CSS que configura o espaçamento
+  entre as palavras de um paragráfo.
