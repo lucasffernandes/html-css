@@ -2,3 +2,23 @@ Capítulo 25/ Aula 10 - CONFIGURANDO O LAYOUT DO PROJETO
 
 * Text-indent -> componente CSS que configura o espaçamento
   entre as palavras de um paragráfo.
+
+-------------------------------------------
+
+Capítulo 25 / Aula 11 - Criando um menu hambúrger
+
+ * Para se criar um menu de amburger é preciso adicionar um ícone de hamburger
+
+ * É possível com HTML e CSS criar um icone de hamburger, criar todas as opçoes que vc deseja que seja disponíveis para o usuário, e depois colocar essas opções imbutidas dentro do icone.
+
+   - Mas a iteratividade de clicar no icone e descer as opções é feito com javaScript dentro da função CSS {onclick}.
+
+* Os códigos em javaScript são colocados dentro de um código HTML em ultimmo lugar dentro do corpo do projeto <BODY>
+
+  - O código javaScript pode ser escrito dentro da tag <script>.
+
+  - Após criar a função, basta colocar o nome dessa função (Chamar a função) dentro da definição CSS {onclick}. 
+     Ex: onclick = funcaoJS()
+
+* Em javaScript '=' significa "receber"
+  - E '==' significa "igual"
