@@ -23,4 +23,6 @@ Capítulo 25 / Aula 11 - Criando um menu hambúrger
 * Em javaScript '=' significa "receber"
   - E '==' significa "igual"
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+* Como o icone é inserido como uma fonte do google fonts, como uma fonte ele é considerado, então como tal o alinhamento é realizado como elemento textual (com 'text-align')
+
+* Com a configuração CSS 'cursor:pointer' o cursor é modificado para ser uma mão quando posicionado em cima de um objeto.
