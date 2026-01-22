@@ -7,7 +7,7 @@ Capítulo 25/ Aula 10 - CONFIGURANDO O LAYOUT DO PROJETO
 
 Capítulo 25 / Aula 11 - Criando um menu hambúrger
 
- * Para se criar um menu de amburger é preciso adicionar um ícone de hamburger
+ * Para se criar um menu de hamburger é preciso adicionar um ícone de hamburger
 
  * É possível com HTML e CSS criar um icone de hamburger, criar todas as opçoes que vc deseja que seja disponíveis para o usuário, e depois colocar essas opções imbutidas dentro do icone.
 
