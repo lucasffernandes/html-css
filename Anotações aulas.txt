@@ -40,3 +40,8 @@ Capítulo 25 / Aula 12 - Media queries para outros dispositivos
 * window.innerWidth = largura de tela em javaScript
    - esse código "força a configuração de tela a funcionar corretamente"
 
+-----------------------------------------------
+Capítulo 26 / Aula 01 - Tela de login responsiva só com HTML e CSS
+-----------------------------------------------
+
+
