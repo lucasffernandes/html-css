@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*
+----------------------------
+pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display:none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block
+    }
+
+    main {
+        /* Essa configuração estabelece uma largura fixa para que o main fique quando a configuração dessa media passa a valer no projeto. */
+
+        width: 768px; 
+    }
+}

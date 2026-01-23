@@ -26,3 +26,15 @@ Capítulo 25 / Aula 11 - Criando um menu hambúrger
 * Como o icone é inserido como uma fonte do google fonts, como uma fonte ele é considerado, então como tal o alinhamento é realizado como elemento textual (com 'text-align')
 
 * Com a configuração CSS 'cursor:pointer' o cursor é modificado para ser uma mão quando posicionado em cima de um objeto.
+  
+
+Capítulo 25 / Aula 12 - Media queries para outros dispositivos
+
+ + para apagar algum item do display (tela) do projeto, basta na propiedade css do elemento colocar 'display:none'.
+
+* assim como existe o elemento em css 'Onclick=' que faz determinada ação quando o elemento for clicado, assim também existe o 'onresize=' que recebe igualmente uma função Em JS que toma determinada ação quando um elemento for modificadi de tamanho.
+   - já esse recurso é adicionado dentro da tag <BODY>
+
+* window.innerWidth = largura de tela em javaScript
+   - esse código "força a configuração de tela a funcionar corretamente"
+
