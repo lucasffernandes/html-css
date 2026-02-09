@@ -40,8 +40,44 @@ Capítulo 25 / Aula 12 - Media queries para outros dispositivos
 * window.innerWidth = largura de tela em javaScript
    - esse código "força a configuração de tela a funcionar corretamente"
 
------------------------------------------------
-Capítulo 26 / Aula 01 - Tela de login responsiva só com HTML e CSS
------------------------------------------------
+-------------------------------------------------------------
+                  MODULO 05/05  HTML5 e CSS3
+---------------------------------------------------------------
 
 
+ --------------------------------------------
+Capítulo 26 Aula 06 – Primeiros passos com Flexbox CSS
+--------------------------------------------
+
+* Flexbox é um conceito da nova versão da CSS que visa rescolver problemas relacionados a responsividade
+      - flexbox (ou flexible Box) é om módulo da nova versão css 3.O
+
+* Nessa nova versão css tambem tem o recurso de Grid Layout
+
+CSS 2.1
+
+-> Block Layout
+-> Inline Layout
+-> Table Layout
+-> position Layout
+
+CSS 3.0
+
+-> CSS flexible bOX (flexbox) Module Level 01
+
+-> CSS Grid Layout Module Level 1/2
+
+--------
+
+* Não quer dizer que os recursos da CSS level 2.1 não sejam úteis mais, eles ainda podem ser utilizados.
+
+* o flexbox organiza os itens dentro da caixa(Conteiner) filha. ou seja, elá é um recurso adicionado geralmente a caixa pai.
+
+* Para esse recurso funcionar é necessário colocar 'flex: auto' na caixa filha para que funcione o recurso flexbox.
+
+   - organize automaticamente os recursos dentro da caixa de acordo com o tamanho do conteiner.
+
+* somente recebe essas configuracoes os conteiners(Flex-conteiner), os itens(flex-itens) recebem as configurações individuais na css.
+
+
+..
