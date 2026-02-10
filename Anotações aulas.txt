@@ -78,6 +78,3 @@ CSS 3.0
    - organize automaticamente os recursos dentro da caixa de acordo com o tamanho do conteiner.
 
 * somente recebe essas configuracoes os conteiners(Flex-conteiner), os itens(flex-itens) recebem as configurações individuais na css.
-
-
-..
