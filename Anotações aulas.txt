@@ -78,3 +78,45 @@ CSS 3.0
    - organize automaticamente os recursos dentro da caixa de acordo com o tamanho do conteiner.
 
 * somente recebe essas configuracoes os conteiners(Flex-conteiner), os itens(flex-itens) recebem as configurações individuais na css.
+
+ --------------------------------------------
+Capítulo 26 Aula 06 – Direções e Eixos Flexbox CSS
+--------------------------------------------
+
+Eixos (axis)
+
+* Alem da configuração flexbox no container pai, existe outras definições desse recurso(flexbox) disponíveis para utilizar no posicionamento de conteiners. 
+   
+   - Dentre elas a flex-direction, é uma definição que vem por padrão o valor ":row" - que quer dizer linha -, ou seja, já vem pré configurado a organização das caixas em linha. Nessa configuração os ítens vão ser configurados da esquerda para direita.
+
+      - existe outro valor para a propriedade flex-direction, que seria ":row-reverse", nesse caso, o sentido de organização dos elementos será dá direita para a esquerda.
+
+   - existe tambem o flex-direction: colum; -> que faz a organização de ítens em coluna, de cima para baixo
+
+      - exite nesse caso também o valor colum-reverse; que organiza o sentido dos itens de baixo para cima.
+
+* Para configurar as posições dos elementos, o que precisa ser definido, é a posição dos eixos do conteiner pai, utilizando esse recurso de flexbox, toda caixa pai passa a ter eixos de localização no espaçamento dentro da caixa pai. Podemos definir os eixos como:
+
+  eixo imaginário X = main axis (main-start, main-end)
+
+  Eixo imaginário Y = cross axis (cross-start, cross-end)
+
+* O sentido dos eixos mudam de acordo com a configuração flex-direction:
+   ex:
+
+   flex-direction: row 
+     cross-axis (y) cima ->  baixo 
+     main-axis (x) esquerda -> direita
+
+   flex-direction: row-reverse
+     cross-axis(y) cima -> baixo
+     main-axis (x) direita -> esquerda
+
+   flex-direction: colunm
+     cross-axis (y) esquerda -> direita
+     main-axis (x)  cima -> baixo
+
+   flex-direction: column-reverse
+     cross-axis (y) esquerda -> direita
+     main-axis (x) baixo -> cima
+
