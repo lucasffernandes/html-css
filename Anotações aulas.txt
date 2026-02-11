@@ -129,3 +129,19 @@ RESUMINDO
 * flex-direction: com o valor colunm, organiza os elementos verticalmente de baixo para cima.
 
 - com o valor colunm-reverse, os elementos ficam organizados verticalmente, de maneira reversa, de cima para baixo.
+
+ --------------------------------------------
+Capítulo 27 Aula 08 – Empacotamento e fluxo no Flexbox CSS
+--------------------------------------------
+
+
+* flex-wrap: nowrap -> Faz com que os conteudos sejam blockeados para serem quebrados para a linha de baixo caso o conteiner seja diminuído. nesse caso, configurado assim, os elementos são encolhidos para caber dentro do conteiner pai. 
+   -Obs: o encolhimento depende do tamanho do item que será configurado.
+   - nowrap = não quebrar
+
+   - é um valor que já vem padrão, caso queira outro comportamento o valor deve ser alterado.
+
+   - caso o valor seja 'wrap' os elementos são quebrados para a baixo para caber no conteiner.
+     - essa quebra é feita no sentido de acordo com a configuração do sentido do eixo transversal cross-axis(ou eixo y)
+
+     - wrap-reverse faz a quebra no sentido contrário ao wrap, faz a quebra dos elementos caso o conteiner diminua para cima.
