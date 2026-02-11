@@ -101,7 +101,7 @@ Eixos (axis)
 
   Eixo imaginário Y = cross axis (cross-start, cross-end)
 
-* O sentido dos eixos mudam de acordo com a configuração flex-direction:
+* O sentido dos eixos mudam de acordo  com a configuração flex-direction:
    ex:
 
    flex-direction: row 
@@ -120,3 +120,12 @@ Eixos (axis)
      cross-axis (y) esquerda -> direita
      main-axis (x) baixo -> cima
 
+RESUMINDO
+
+* flex-direction: com o valor 'row' organiza os elementos horizontalmente da esquerda -> direita
+
+- com o valor row-reverse, organiza esses elementos horizontalmente de maneira reversa da direita para a esquerda
+
+* flex-direction: com o valor colunm, organiza os elementos verticalmente de baixo para cima.
+
+- com o valor colunm-reverse, os elementos ficam organizados verticalmente, de maneira reversa, de cima para baixo.
