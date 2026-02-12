@@ -145,3 +145,22 @@ Capítulo 27 Aula 08 – Empacotamento e fluxo no Flexbox CSS
      - essa quebra é feita no sentido de acordo com a configuração do sentido do eixo transversal cross-axis(ou eixo y)
 
      - wrap-reverse faz a quebra no sentido contrário ao wrap, faz a quebra dos elementos caso o conteiner diminua para cima.
+
+* Flex-flow -> é uma maniera simplificada de lidar com as propriedades flex-wrap e flex-direction.
+
+  -é na verdade uma shorthand pra poder declarar essas propriedades.
+
+  - Ex: se o flex-direction e o flex-wrap estiverem com o valor padrão (row/nowrap), p flex-flow ficará:
+    
+     flex-flow: row nowrap
+
+PADRÃO W3C:
+
+ -> UTILIZA-SE NO LUGAR DE flex-direction e flex-wrap o FLEX-FLOW
+
+ * flex:auto -> é usado somente no conteiner filho
+   
+   - não deixa espaços brancos no conteiner pai, fazendo os elementos internos ocuparem todos os espaços do conteiner pai.
+
+
+  *Flex-flow: direção fluxo-de-quebra
