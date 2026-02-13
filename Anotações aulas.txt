@@ -164,3 +164,47 @@ PADRÃO W3C:
 
 
   *Flex-flow: direção fluxo-de-quebra
+
+   --------------------------------------------
+Capítulo 27 Aula 09 – Alinhamento nos eixos Flexbox
+--------------------------------------------
+
+* justify-content -> faz o alinhamento de elementos de acordo com o eixo principal (main-axis)
+
+* main-axis tem o começo (main-start) no lado esquerdo do conteiner principal e termina (main-end) no final do conteiner.
+
+* Um valor de configuração da propriedade Justify-content é o flex-start, que configura o alinhamento de elementos no começo do eixo principal, deixando a sobra de espaço pro final do eixo.
+
+  - RELEMBRANDO -> o sentido do eixo principal, vai depender do sentido configurado como primeiro parãmetro no Flex-flow.
+
+* Em contrapartida, o valor flex-end do parâmetro justify-content, faz com que os elementos sejam alinhados no final do eixo principal, e a sobra de espaço é armazenada no lado esquerdo do conteiner.
+
+  - O valor center, coloca todos os elementos colados e centralizados no centro do conteiner e as sobras vai ser divididas entre as extremidades inicial(main-start) e final (main-end) do eixo principal.
+
+* O justify-content: space-between -> faz a gestão de espaço colocando o primeiro elemento no main-start e o ultimo elemento no main-end, colados nos dois extremos.
+
+* Justify-content: space-evenly -> faz a gestão do espaçamento distribuindo entre os elementos o espaço que restou do conteiner pai de maneira igualitária.
+
+* Justify-content: space-around faz a gestão do espaçamento não como o espace-evenly, que tem como objetivo alinhar os itens distribuindo de maneira igual entre os elementos. o space-around faz o alinhamento levando em consideração o espaçamento entre os elementos (onde começa um elemento e onde termina). Levando em consideração isso ele faz o alinhamento de elementos.
+ 
+* como em colunas e em configurações reversas do flex-flow os sentido do eixo principal muda, é necessário tomar cuidado quanto o sentido e a gestão de espaço de cada parâmetro.
+
+ALINHAMENTO PARA EIXO TRANSVERSAL (cross-axis)
+
+* Para fazer o alinhamento no pelo eixo transversal o idel é aumentar a altura do conteiner para entender como está sendo feito a gestao do espaço (no caso para aprender as configurações)
+
+* a propriedade que faz a gestão de espaçamento transversal é
+align-itens:
+
+  - ela recebe por padrão o valor 'stretch' que faz o "esticamento dos elementos" no sentido do cross-axis.
+
+  - Flex-start -> é o valor dessa propriedade que faz o alinhamento dos elementos no começo do eixo transversal (Cross-start) e o espaçamento restante fica concentrado no fim do eixo transversal (cross-end)
+
+  - o espaçamento restante do lado direito dos elementos pertencem ao eixo principal, e o espaço que sobra no fim do eixo transversal pertencem ao eixo transversal.
+
+  - align-items: flex-end -> faz o alinhamento dos elementos no final do eixo TRANSVERSAL, e o espaçamento restante fica concentrado no inicio do eixo.
+
+  - o valor 'center' alinha os elementos no centro do eixo, deixando as sobras de espaço igualmente divididas entre as extremidades.
+
+  - align-items não tem as configurações de espaçamento, como: space-between, space-around e space-evenly existe uma outra propriedade que faz isso para o eixo transversal.
+
