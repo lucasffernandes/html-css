@@ -208,3 +208,23 @@ align-itens:
 
   - align-items não tem as configurações de espaçamento, como: space-between, space-around e space-evenly existe uma outra propriedade que faz isso para o eixo transversal.
 
+   --------------------------------------------
+Capítulo 27 Aula 10 – Centralização absoluta com Flexbox
+--------------------------------------------
+
+* Usando Flexbox fica bem mais facil para centralizar elementos.
+
+RELEMBRANDO RESUMIDAMENTE
+
+* para alinhar os elementos pelo eixo principal (main-axis) é utilizado Justify-content.
+
+* Para alinhar os elementos pelo eixo transversal (cross-axis) é utilizado align itens.
+
+* essas configurações de flex-box são sempre aplicadas ao conteiner pai
+
+* Para utilizar essas duas propriedades para centralizar os elementos basta fazer dessa forma:
+
+   Justify-content: center
+   align-itens: center
+
+
