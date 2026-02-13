@@ -227,4 +227,8 @@ RELEMBRANDO RESUMIDAMENTE
    Justify-content: center
    align-itens: center
 
+* Para centralizar elementos a primeira configuração a ser feira no conteiner pai é o 'display:flex'.
 
+* Antes de centralizar, é bom (não é via de regra) deixar definido o flex-flow para que seja descrito o fluxo do eixo principal e o transversal.
+
+* semanticamente (não é uma regra) é melhor nao utilizar o body html como conteiner pai na centralização de elementos.
