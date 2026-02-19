@@ -232,3 +232,39 @@ RELEMBRANDO RESUMIDAMENTE
 * Antes de centralizar, é bom (não é via de regra) deixar definido o flex-flow para que seja descrito o fluxo do eixo principal e o transversal.
 
 * semanticamente (não é uma regra) é melhor nao utilizar o body html como conteiner pai na centralização de elementos.
+
+
+   --------------------------------------------
+Capítulo 27 Aula 11 – Alinhamento de elementos empacotados no Flexbox
+--------------------------------------------
+
+* Justify-content -> alinha os elementos de acordo com o eixo principal
+
+* align-itens -> alinha os elementos de acordo com o eixo transversal
+
+* align-content -> Alinha os elementos no eixo transversal "quando estão empacotados."
+
+ - O valor 'stretch' vai esticar o elemento até que preencha toda a linha transversal
+
+   - Esse é o valor padrão
+
+   - se caso os elementos forem quebrados e dois ou tres elementos esse valor divide o espaço de acordo com a quebra da linha. Ex: se for duas linhas essa configuração divide o espaço do eixo transversal em duas linhas e estica os elementos até ocuparem toda a linha delimitada.
+
+ - O valor 'flex-start' gruda todos os elementos no cross start do eixo transversal
+
+   - esse valor concetra todo o espaço vazio na parte de baixo do eixo transversal
+
+
+ - O valor 'flex-end' aproxima todos os elementos no cross end (no final) do eixo transversal
+
+   - Esse valor concentra todo o espaço vazio no cross start do conteiner.
+
+  - O valor 'center' centraliza os elementos no centro do eixo transversal e os espaços vazios manda para as extremidades do conteiner
+
+ - O valor 'space-between' coloca os elementos próximo as extremidades e divide os espaços livres centrais com os elementos do meio.  
+
+- o valor 'space-evenly' alinha os elementos de acordo com o espaço do conteiner
+
+- 'space-around' -> divide oseixo transversal em partes iguais, e estica eles para que ocupem totalmente o espaço delimitado
+
+- 'align-content' só funciona quando a linha está abilitada quebra de elementos (wrap).
