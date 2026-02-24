@@ -303,3 +303,29 @@ os filhos não recebem esse tipo de configuração, eles recebem outro tipo.
  - center -> coloca o ítem no centro do eixo transversal.
 
  - stretch -> estica o elemento para caber em toda a largura do eixo transversal.
+
+    --------------------------------------------
+Capítulo 27 Aula 13- – Propriedade flex-basis em Flexbox
+--------------------------------------------
+
+* 'Flex-basis' serve para configurar o tamanho dos itens dentro de um container
+
+* Por padrão, o valor dessa propriedade é 'auto', e torna o tamanho do item de acordo com o seu conteúdo interno.
+
+* se o item estiver configurado para ser em linha, o que será definido é a largura dos elementos, se caso estiver em coluna, será configurado a altura dos elementos dentro do conteiner.
+
+outros valores de flex-basis:
+
+ - pixels (ex flex-basis: 200px) -> define o valor em pixel para os elementos de 200 px.
+
+    - Nesse caso, pode ser ser definido tanto o tamanho de todos os elementos, quando de elementos individuais.
+
+    - com essa configuração, se o espaço do conteiner não for suficiente para caber os elementos em 200px eles são diminuídos em tamanhos iguais até que caibam no conteiner.
+    
+    - se for diminuído e o conteúdo não couber dentro, o elemento passará para fora do conteiner se for configurado o flex-flow em nowrap(sem quebra).
+
+    - Se o flex-flow permitir quebra, com essa configuração será feito as quebras necessárias para caber os elementos dentro do eixo necessário, evitando o transbordamento.
+
+RELEMBRANDO
+
+ * align-content faz o alinhamento do conteúdo empacotado, ou seja, faz o alinhamento visando o conteudo empacotado (dentro) dos itens do conteiner.
