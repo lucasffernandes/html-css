@@ -268,3 +268,38 @@ Capítulo 27 Aula 11 – Alinhamento de elementos empacotados no Flexbox
 - 'space-around' -> divide oseixo transversal em partes iguais, e estica eles para que ocupem totalmente o espaço delimitado
 
 - 'align-content' só funciona quando a linha está abilitada quebra de elementos (wrap).
+
+   --------------------------------------------
+Capítulo 27 Aula 12- – Anatomia dos itens Flexbox
+--------------------------------------------
+
+* Somente os conteiners recebem configurações Flex,
+os filhos não recebem esse tipo de configuração, eles recebem outro tipo.
+
+  -Obs: podem até receber, mas não é bom para a anatomia do código.
+
+* Por padrão, os conteiners são flexiveis, os ítens não são.
+
+* 'flex:auto' é uma propíedade aplicada a ITENS.
+
+* 'order' é outra propriedade aplicada a ITENS, por padrão o seu valor é 0.
+
+  - Para modificar a ordem dos itens dentro de um conteiner basta atribuir um número desejado dentro de cada item com essa propriedade que eles serão ajustados com base nesses valores atribuídos.
+
+  - Com isso a CSS vai ordenar os itens em ordem CRESCENTE.
+
+* 'align-self' atribui a cada elemento um alinhamento individual.
+
+ -Essa propriedade funciona no pelo eixo transversal
+
+     -> Valores de 'align-self':
+  
+ - auto -> herda a característica de alinhamento vertical do seu pai.
+
+ - flex-start -> coloca o item no cross-start do eixo transversal (no primeiro lugar)
+
+ - flex-end -> coloca o item como último elemento do eixo transversal.
+
+ - center -> coloca o ítem no centro do eixo transversal.
+
+ - stretch -> estica o elemento para caber em toda a largura do eixo transversal.
