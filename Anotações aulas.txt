@@ -329,3 +329,42 @@ outros valores de flex-basis:
 RELEMBRANDO
 
  * align-content faz o alinhamento do conteúdo empacotado, ou seja, faz o alinhamento visando o conteudo empacotado (dentro) dos itens do conteiner.
+
+
+     --------------------------------------------
+Capítulo 27 Aula 14 – Controle do tamanho de itens flexíveis
+--------------------------------------------
+
+Ainda propriedade aplicada a itens e não conteiners
+
+* 'flex:glow' configura o quanto pode crescer e 'flex:shrink' é o quanto pode encolher
+
+* para funcionar esse recurso é preciso definir o flex-flow: como 'nowrap', pq caso contrario em vez de crescer sera quebrado o conteiner.
+
+* Por padrão, o flex-shrink é igual a 1 e o flex-glow é igual a 0.
+
+    Pode encolher? Pode aumentar?
+  
+   - 1 significa que sim / 0 significa não
+
+   - seguindo os valores padrão: 
+     
+     flex-shrink:1 = pode encolher
+     flex-glow: 0  = não pode crescer
+
+   - se for travado a diminuição dos elementos com essas propriedades e o conteiner for diminuido para ser menor que o tamanho dos elementos configurados, ocorrerá o transbordamento.
+
+   FLEX-SHRINK / FLEX-GLOW PARA VALORES DIFERENTES DE 0 E 1:
+
+* Valor '2' -> se o flex-glow receber esse valor, o item configurado cresce o dobro do tamanho do item que estiver com o número 1.
+
+* na ocasião de:
+ 
+  elemento = 0 / elemento = 2 / elemento = 2
+
+  - nesse caso, como não tem referência, os dois elementos que receberam o valor 2 vao crescer na mesma proporção. (como não tem o numero 1 como referencia de valor à ser dobrado de tamanho)
+
+* A mesma lógica se aplica a Flex-shrink para diminuir elementos.
+
+* geralmente as propriedades flex-basis, flex-glow e flex-shrink trabalham juntas.
+
