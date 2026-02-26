@@ -368,3 +368,55 @@ Ainda propriedade aplicada a itens e não conteiners
 
 * geralmente as propriedades flex-basis, flex-glow e flex-shrink trabalham juntas.
 
+
+-----------------------------------
+Capítulo 27 Aula 15 – A propriedade flex
+-----------------------------------
+
+* É possível ter as propriedades flex-basis, flex-glow e flex-shrink em uma shorthand.
+
+* A propriedade flex é aplicada somente a itens e não a containers
+
+* as propriedades flex-basis, flex-glow e flex-shrink são todas configuradas naturalmente nos elementos com os seus valores padrão. para trocar o comportamento dos elementos de maneira diferente basta declarar essas propriedades e modificar os seus valores
+
+* Não é recomendado pela W3C que sejam utilizados as propriedades flex-basis, flex-glow e flex-shrink individualmente pelos itens de um elemento, para isso existe a propriedade 'flex'.
+
+ordem de aplicação dessas propriedades em shorthand:
+
+flex-Grow  : 0
+flex-shrink: 1         =   flex: 0 1 150px
+flex-basis : 150px
+
+     pode crescer? / Pode diminuir? / tamanho do elemento
+flex: crescimento / dominuição     / tamanho
+
+* É uma recomendação da W3C utilizar essa shorthand no lugar das declarações individuais dessas propriedades.
+
+Outras simprificações dessas propriedades:
+
+* shorthand dos valores padrão de flex-basis, flex-glow e flex-shrink:
+
+  flex: 0 1 auto  = flex: initial
+
+* Definição para o item não crescer, não diminuir e para se adaptar de tamanho de acordo com o conteúdo interno:
+
+  flex: 0 0 auto  =  flex: none
+
+  - torna o elemento não flexivel
+
+* Definição para tornar o elemento totalmente flexivel, tanto em crescimento (Grow) diminuição (shrink) e de tamanho(auto)
+
+  flex: 1 1 auto  =  flex: auto
+
+* Caso houver na declaração de flex somente um valor, os demais valores serão reconhecidos automaticamente como padrão das propriedades
+
+ex: 
+  flex: 3  -> é o flex-Grow definido em 3 
+
+  os demais valores nesse caso (shrink e basis) serão inplicitamente os valores padrão (1 auto)
+
+  flex 3  = flex 3 1 auto
+
+
+
+
