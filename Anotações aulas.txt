@@ -423,4 +423,16 @@ Capítulo 27 Aula 15 – Criando um menu com Flexbox (parte 1)
 exercício flex013
 -----------------------------------
 
+*** Somente aula prática***
 
+
+-----------------------------------
+Capítulo 27 Aula 16 – Criando um menu com Flexbox (parte 2)
+exercício flex013
+-----------------------------------
+
+* As configurações flex não afeta conteúdo dentro de itens, somente os itens e os conteiners
+
+* para que os subitens sejam afetados e configurados flexivelmente, basta definir o item como display flexivel (display:flex) para que se torne um conteiner para os subitens serem configurados como itens.
+
+* uma boa prática no desenvolvimento de sites é colocar margem pontilhada nos elementos para saber o comportamento das caixas.
