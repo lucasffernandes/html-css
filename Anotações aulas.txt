@@ -441,3 +441,7 @@ Capítulo 27 Aula 16 – Criando um menu com Flexbox (parte 2)
 Capítulo 27 Aula 17 – Menu Responsivo com Flexbox e Media Queries na Prática
 -> exercício flex013
 -----------------------------------
+
+-----------------------------------
+Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 1)
+-----------------------------------
