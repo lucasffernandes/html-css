@@ -445,3 +445,9 @@ Capítulo 27 Aula 17 – Menu Responsivo com Flexbox e Media Queries na Prática
 -----------------------------------
 Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 1)
 -----------------------------------
+
+-----------------------------------
+Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 2)
+-----------------------------------
+
+0
