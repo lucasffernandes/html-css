@@ -447,7 +447,70 @@ Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 1)
 -----------------------------------
 
 -----------------------------------
-Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 2)
+Capítulo 27 Aula 18 – Conteúdo flexível apenas com Flexbox (parte 2)
 -----------------------------------
 
-0
+-----------------------------------
+Capítulo 27 Aula 19 – O que é Grid Layout?
+-----------------------------------
+
+* tem o objetivo parecido com o flex-box, trazer responsividade a um site. (Ou criar um site Responsivo)
+
+* existem situações que deverá utilizar grid Layout, e existe situações que será necessário utilizar flexbox
+
+* O manual oficial do Grid Layout está no W3C.
+
+* O grid layout nasceu com o objetivo de se criar toda a interface visual de site, facilita esse processo com o posicionamento de elementos.
+
+* nesse modelo, os elementos filhos vão ser posicionados livremente sendo eles definidos com dimenções flexíveis ou não.
+
+* Grid LAYOUT, Propoe a criação de sites com a idéia de linhas e grades (Parecido com grades de uma planilha).
+
+
+-----------------------------------
+Capítulo 27 Aula 19 – A Anatomia de um Grid
+-----------------------------------
+
+line-grow / line-greed, podem ter tradução igual mas são coisas diferentes.
+
+* grid-layout tem o fundamento de container, sempre que for definir uma grade o tamanho será dado para essa grade em conteiner. 
+  - o tamanho desejado será definido para a propriedade: "grid container".
+
+* 'grid ITEM' é os pequenos quadrantes (item)  dentro de um conteiner.
+
+* grid track -> sequência de quadrantes de itens, seja em linha ou em coluna.
+
+* Row track -> trilha de linha
+
+* column track -> trilha de coluna
+
+* grid Lines -> são as linhas que separam os itens dentro de um conteiner grid
+
+  - são enumeradas e essa numeração começa da esquerda para a direita.
+
+* existe a enumeração de lines e de tracks
+
+* uma grid de 6x6 tem: 6 tracks de colunas de elementos, más tem 7 lines, que separam os elementos internos.
+
+* existem gride lines verticais e horizontais
+
+* As linhas verticais são feitas a enumeração de cima para baixo.
+
+* as enumeração de linhas pode ser feita em numeros negativos ou positivos.
+
+* uma área é um conjunto de itens (ou agrupamento de itens) delimitados em um conteiner
+
+* existe maneira de se configurar um espaço entre os itens dentro de um conteiner grid, esse espaço pode ser configurado com o: 'grid gap'
+
+  - modificando o gap entre os elementos não se muda o tamanho dos elementos, somente o tamanho dos gaps (espaçamento entre os elementos)
+
+* Conteiner é a estrutura mais inportante no Grid-layout.
+
+
+
+
+
+
+
+
+
