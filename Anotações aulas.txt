@@ -507,10 +507,52 @@ line-grow / line-greed, podem ter tradução igual mas são coisas diferentes.
 * Conteiner é a estrutura mais inportante no Grid-layout.
 
 
+-----------------------------------
+Capítulo 27 Aula 20 – Propriedades de container para Grids (parte 1)
+-----------------------------------
+
+* display -> torna a propriedade um conteiner
+
+* grid-template-columns define a quantidade de colunas vão ter um grid
+
+* grid-template-rows -> define a quantidade de linhas que terá um grid
+
+* grid-gap -> propriedade que configura o espaçamento entre os itens de um conteiner.
+
+* Grid-layout é conhecido como uma estrutura bidimencional (e o flexbox unidimencional)
+
+* display: grid -> cria um grid conteiner (e consequentemente grid-itens no seu interior)
+
+  - somente com essa configuração nada muda, pois o padrão de criação dessa propriedade grid é definir um conteiner de uma coluna de multiplas linhas.
+
+* grid-template-columns: auto auto; -> permite uma configuração mais detalhada de colunas em um grid conteiner
+
+   - com esse valor padrão (auto auto), ele define a quantidade de colunas padrão (2), e também a quantidade padrão de linhas (o quanto couber na altura do elemento)
+
+   - ordem de elementos:   A   B   
+                           C   D
+                           E   F
+
+   - Para criar uma grade com 3 colunas basta adicionar mais um valor 'auto' a essa propriedade.
+
+    - EX:  grid-template-columns: auto auto auto;
+     
+    - ordem de elementos:   A   B  C 
+                            D   E  F
+                           
+ * Como o valor colocado foi 'auto', então a largura dos elementos serão configuradas automaticamente, todos os itens terão a mesma largura.
 
 
+* Grid-template-rows: 100px 100px 100px; -> configura os três elementos da coluna A B C tenham 100px de ALTURA. 
+
+obs: 
+
+* grid-template-columns alem de definir a quantidade de colunas, define tbm a largura dos elementos.
 
 
+* Grid-template-rows -> além de definir a quantidade de linhas define tambem a altura dos elementos.
 
+* grid-gap: 20px; -> define os espaçamentos verticais e hozontais dos elemtos.
 
+  - também pode ser configurado de maneira diferente os espaços verticais e horizontais com esse elemento
 
