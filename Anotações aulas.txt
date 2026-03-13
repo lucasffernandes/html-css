@@ -451,7 +451,7 @@ Capítulo 27 Aula 18 – Conteúdo flexível apenas com Flexbox (parte 2)
 -----------------------------------
 
 -----------------------------------
-Capítulo 27 Aula 19 – O que é Grid Layout?
+Capítulo 28 Aula 19 – O que é Grid Layout?
 -----------------------------------
 
 * tem o objetivo parecido com o flex-box, trazer responsividade a um site. (Ou criar um site Responsivo)
@@ -468,7 +468,7 @@ Capítulo 27 Aula 19 – O que é Grid Layout?
 
 
 -----------------------------------
-Capítulo 27 Aula 19 – A Anatomia de um Grid
+Capítulo 28 Aula 19 – A Anatomia de um Grid
 -----------------------------------
 
 line-grow / line-greed, podem ter tradução igual mas são coisas diferentes.
@@ -508,7 +508,7 @@ line-grow / line-greed, podem ter tradução igual mas são coisas diferentes.
 
 
 -----------------------------------
-Capítulo 27 Aula 20 – Propriedades de container para Grids (parte 1)
+Capítulo 28 Aula 20 – Propriedades de container para Grids (parte 1)
 -----------------------------------
 
 * display -> torna a propriedade um conteiner
@@ -556,3 +556,19 @@ obs:
 
   - também pode ser configurado de maneira diferente os espaços verticais e horizontais com esse elemento
 
+
+-----------------------------------
+Capítulo 28 Aula 21 – CSS Grid Layout na prática (parte 1)
+-----------------------------------
+
+Atalhos importantes:
+
+ * Para criar uma div nomeada com o nome de uma classe -> div.nome
+
+ * Para criar várias vezes um mesmo elemento, basta adicionar na frente o símbolo de '*' asterísco.
+
+ * grid-gap é apartir de agora uma propriedade obsoleta, o nome foi abreviado para -> gap
+
+ * Para ver os índices numéricos das linhas de um conteúdo grid basta abrir o inspecionador de códigos do site (Atalho: contrw + shift + c), e na classe do conteiner desejado nos elementos de estilo, clique na descrição: 'grid'.
+
+   - é possível também fazer testes de alinhamento de ítens de um conteiner com o recurso do dev tools, basta procurar em estilos o conteiner desejado e à frente do: display:grid, existe um elemento clicável que dá várias opções de alinhhamento pré-configurado.
