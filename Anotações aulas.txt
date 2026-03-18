@@ -572,3 +572,46 @@ Atalhos importantes:
  * Para ver os índices numéricos das linhas de um conteúdo grid basta abrir o inspecionador de códigos do site (Atalho: contrw + shift + c), e na classe do conteiner desejado nos elementos de estilo, clique na descrição: 'grid'.
 
    - é possível também fazer testes de alinhamento de ítens de um conteiner com o recurso do dev tools, basta procurar em estilos o conteiner desejado e à frente do: display:grid, existe um elemento clicável que dá várias opções de alinhhamento pré-configurado.
+
+-----------------------------------
+Capítulo 28 Aula 22 – Propriedades de container para Grids (parte 2)
+-----------------------------------
+
+* Para alinhar itens (Em grid layout):
+
+  - align-items         -> alinhamento vertical
+  - justify-items       -> alinhamento horizontal
+
+* Para alinhar conteúdo:
+  - align-content       -> alinhamento vertical
+  - justify-content     -> alinhamento horizontal
+
+* o padrão de valor para a propriedade alignt-content é 'stretch', com esse valor, os itens são esticados caso o conteinter seja alterado
+
+    - com o valor 'start' o conteúdo vai ser colado na parte de cima do elemento.
+
+    - 'center' -> é o valor que centraliza os elementos ao centro (verticalmente)
+
+    - 'end' -> é o valor que cola o conteúdo no final do elemento (na parte de baixo)
+
+
+* O valor padrão para a propriedade justify items é o 'stretch'
+que faz com que os elementos estiquem de acordo com as altrerações feitas no conteiner principal.
+  
+   - o valor 'start' coloca os elementos no canto esquerdo do elemento
+
+   - o valor center centraliza os elementos horizontalmente
+
+   - o valor 'end' coloca os itens no canto esquerdo desse elemento.
+
+   - O valor 'space-between' coloca o primeiro elemento no centro e cola o restante nas extermidades
+
+   - 'space-evenly' vai ajustar os elementos pelo espaço restante entre eles
+
+   - space-around vai ajustar os elementos de acordo com o espaço horizontal que eles possuem
+
+   
+
+
+
+
