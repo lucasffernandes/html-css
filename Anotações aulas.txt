@@ -610,7 +610,18 @@ que faz com que os elementos estiquem de acordo com as altrerações feitas no c
 
    - space-around vai ajustar os elementos de acordo com o espaço horizontal que eles possuem
 
-   
+-----------------------------------
+Capítulo 28 Aula 23 – CSS Grid Layout na prática (parte 2)
+-----------------------------------
+
+* Para "CONTEÚDO" existem valores que vão além do 'start','End' e 'center' para as propriedades de conteúdo Align-content / justify-content. Esses valores são:
+
+ - space-between / space-evenly e space-around.
+
+ - conteúdo já explicado acima.
+
+
+
 
 
 
