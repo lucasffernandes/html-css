@@ -620,9 +620,43 @@ Capítulo 28 Aula 23 – CSS Grid Layout na prática (parte 2)
 
  - conteúdo já explicado acima.
 
+-----------------------------------
+Capítulo 28 Aula 24 – Propriedades de container para Grids (parte 3) 
+-----------------------------------
 
+********** SIMPLIFICAÇÕES ***********
 
+* Conteiner só se torna conteiner se estiver com a propriedade Display:grid
 
+* grid-auto-row: 100px -> é uma propriedade simplificadora que torna todo elemento inserido em um conteiner com o tamanho de 100px
 
+  - Pois caso se for definido uma quantidade exata de linhas com a propriedade 
+   grid-template-rows: 100px 100px 100px 
+   e eventualmente for inserido um elemento e que desça para uma 4° linha, essa linha criada não terá configuração de tamanho e ficará diferente das outras.
 
+* o mesmo ocorre com a propriedade simplificadoera grid-auto-column: 100px
+   Ela cria uma pre configuração de 100px para toda coluna que for acrescentada
 
+* é chamado de grid "explícito" todas as configurações que foram declaradas, e de grid "implícito" todas as configurações que vao afetar o que não foi explícito no código.
+
+* place-items -> simplifica as configurações de: align-items / justify-items
+
+EX:
+align-items:     stretch    ->
+justify-items:   center
+
+->       =  place-items: stretch center;
+
+* Place-content -> simplifica as configurações das propriedades align-content / justify-content
+
+EX:
+align-content:     start    ->
+justify-content:   end
+
+->  = place-content: start end;
+
+* grid-template-rows: 100px 100px 100px e grid-template-colums: auto auto auto 
+podem ser simplificados com: 
+grid-template: 100px 100px 100px / auto auto auto;
+
+   - sempre na ordem linha / coluna
