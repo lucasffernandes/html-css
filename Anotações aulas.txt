@@ -660,3 +660,61 @@ podem ser simplificados com:
 grid-template: 100px 100px 100px / auto auto auto;
 
    - sempre na ordem linha / coluna
+
+-----------------------------------
+Capítulo 28 Aula 25 – Propriedades de container para Grids (parte 4) 
+-----------------------------------
+
+***** SIMPLIFICAÇÕES (Part 2)*****
+
+* Função para simplificar:
+
+ - repeat() -> essa função recebe dois valores, o primeiro é a quantidade de vezes que deseja repetir o valor, e o segundo valor é a característica do item.
+
+EXEMPLO DE IMPLEMENTAÇÃO:
+
+* Grid-template-columns: auto auto auto;  ->
+                   =
+grid-template-columns: repeat(3, auto);
+
+
+* grid-template-rows: 100px 100px 100px; ->
+                   =
+grid-template-rows: repeat(3, 100px)
+
+AINDA OUTRO EXEMPLO:
+
+* grid-template: 100px 100px 100px / auto auto auto;       =
+
+grid-template: repeat(3,100px) / repeat(3, auto);
+
+--------------      ---------------
+
+UNIDADE FRACIONAL
+
+* grid-template-columns: 1fr 1fr 1fr;
+
+  - cria um conteiner de tres elementos de tamanhos iguais, divididos em 3 partes.
+
+  - se o conteiner tiver 1500px, cada fração nesse caso terá 500px.
+
+  - é melhor usar fração no lugar do valor 'auto'.
+
+* aumentando o valor das frações você consegue aumentar as vezes que o item vai ter de tamanha diferente que os outros elementos.
+
+EXEMPLO: 
+
+grid-template-columns: 1fr 2fr 1fr;
+
+-> nesse exemplo o item do meio vai ter 2x mais o tamanho do que os outros elementos
+
+   - nesse caso, o valor foi dividido em 4 frações.
+
+
+------------
+
+
+* caso o grid-template-columns: 100px 20% 2fr 1fr receber valors em porcentagem como esse, se trada de 20% da larrgura do conteiner.
+
+
+
