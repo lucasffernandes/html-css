@@ -631,8 +631,7 @@ Capítulo 28 Aula 24 – Propriedades de container para Grids (parte 3)
 * grid-auto-row: 100px -> é uma propriedade simplificadora que torna todo elemento inserido em um conteiner com o tamanho de 100px
 
   - Pois caso se for definido uma quantidade exata de linhas com a propriedade 
-   grid-template-rows: 100px 100px 100px 
-   e eventualmente for inserido um elemento e que desça para uma 4° linha, essa linha criada não terá configuração de tamanho e ficará diferente das outras.
+   grid-template-rows: 100px 100px 100px e eventualmente for inserido um elemento e que desça para uma 4° linha, essa linha criada não terá configuração de tamanho e ficará diferente das outras.
 
 * o mesmo ocorre com a propriedade simplificadoera grid-auto-column: 100px
    Ela cria uma pre configuração de 100px para toda coluna que for acrescentada
@@ -710,11 +709,19 @@ grid-template-columns: 1fr 2fr 1fr;
 
    - nesse caso, o valor foi dividido em 4 frações.
 
-
-------------
-
-
-* caso o grid-template-columns: 100px 20% 2fr 1fr receber valors em porcentagem como esse, se trada de 20% da larrgura do conteiner.
+* caso o grid-template-columns: 100px 20% 1fr 1fr receber valors em porcentagem como esse, se trada de 20% da larrgura do conteiner.
 
 
+-----------------------------------
+Capítulo 28 Aula 25 – CSS Grid Layout na prática (parte 3) 
+-----------------------------------
 
+* A propriedade 'grid-auto-flow' organiza os elementos dentro do conteiner
+  
+  - quando recebe o valor column ela organiza os elementos em forma de colunas.
+
+  - quando recebe o valor 'row' ele organiza os elmentos em linhas.
+
+* caso for definido o auto-flow como coluna, os elementos que forem criados e acrescentados, receberam o valor padrão de stretch, consequentemente eles esticaram e diminuirão de acordo com o tamanho do conteiner.
+
+  - para mudar isso, basta criar o grid-auto-colunm: 120px (ou o tamanho em pix que desejar) para que seja criado em maneira automática os elementos que forem acrescentados.
