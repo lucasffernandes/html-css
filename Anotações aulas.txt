@@ -713,7 +713,7 @@ grid-template-columns: 1fr 2fr 1fr;
 
 
 -----------------------------------
-Capítulo 28 Aula 25 – CSS Grid Layout na prática (parte 3) 
+Capítulo 28 Aula 26 – CSS Grid Layout na prática (parte 3) 
 -----------------------------------
 
 * A propriedade 'grid-auto-flow' organiza os elementos dentro do conteiner
@@ -725,3 +725,18 @@ Capítulo 28 Aula 25 – CSS Grid Layout na prática (parte 3)
 * caso for definido o auto-flow como coluna, os elementos que forem criados e acrescentados, receberam o valor padrão de stretch, consequentemente eles esticaram e diminuirão de acordo com o tamanho do conteiner.
 
   - para mudar isso, basta criar o grid-auto-colunm: 120px (ou o tamanho em pix que desejar) para que seja criado em maneira automática os elementos que forem acrescentados.
+
+  -----------------------------------
+Capítulo 28 Aula 27 – Propriedades de itens para Grids (parte 1)
+-----------------------------------
+
+DEFININDO UMA ÁREA
+
+* grid-row-start: define a linha de início da área
+
+* grid-row-end: define a linha final da área
+
+* grid-colum-start: define a coluna inicial da área
+
+* grid-column-end: define a coluna finak da área
+
