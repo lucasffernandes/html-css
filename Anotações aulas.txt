@@ -740,3 +740,10 @@ DEFININDO UMA ÁREA
 
 * grid-column-end: define a coluna finak da área
 
+  -----------------------------------
+Capítulo 28 Aula 27 – Mão na Massa: Posicionando Itens no Grid Layout
+-----------------------------------
+
+* áreas são grupos de items
+
+* Na prática, as alterações de posição nas definições de área para números negativos não funcionou.
