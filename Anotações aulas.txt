@@ -741,9 +741,60 @@ DEFININDO UMA ÁREA
 * grid-column-end: define a coluna finak da área
 
   -----------------------------------
-Capítulo 28 Aula 27 – Mão na Massa: Posicionando Itens no Grid Layout
+Capítulo 28 Aula 28 – Mão na Massa: Posicionando Itens no Grid Layout
 -----------------------------------
 
 * áreas são grupos de items
 
 * Na prática, as alterações de posição nas definições de área para números negativos não funcionou.
+
+  -----------------------------------
+Capítulo 28 Aula 29 – CSS Grid: Shorthands para Itens
+-----------------------------------
+
+ Uso de span em definições de áreas em grid-layout
+
+ * pode também pode ser usado para expandir o tamanho de áreas em grid-layout
+
+  EXEMPLO:   
+  
+  em vez de -> grid-row-start: 1;
+               grid-row-end: 4;
+
+  posso usar -> grid-row-start: 1;
+                grid-row-end: span 3;
+  
+  - span significa expanção
+
+  - no lugar de definir quantas Lines contem todas as Rows, eu posso colocar span, que coloca a quantidade de linhas que terá o projeto.
+
+  SIMPLIFICANDO declarações
+
+* no lugar de 'grid-row-start' e 'grid-row-end' use:
+  grid-row: valor start / valor end
+   
+  EXEMPLO:   
+  
+  em vez de -> grid-row-start: 1;
+               grid-row-end: 4;
+
+  posso usar -> grid-row: 1 / 4;
+
+* da mesma forma com a propriedade grid-column-start / grid-column-end.
+
+ EXEMPLO:   
+  
+  em vez de -> grid-column-start: 1;
+               grid-column-end: 4;
+
+  posso usar -> grid-column: 1 / 4;
+
+
+ - quando se existe apenas um valor no grid-column / grid-row, é o primeiro a quantidade de linhas, já o segundo valor após o: "/" será o valor padrão de colunas que é auto (uma coluna somente)
+
+
+SIMPLIFICANDO grid-row e grid-column:
+
+* para simplificar essas duas propriedades existe o grid-area. Ele recebe 5 valores:
+
+-> grid-area: row-start/column-start/row-end/column-end;
