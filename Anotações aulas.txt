@@ -798,3 +798,21 @@ SIMPLIFICANDO grid-row e grid-column:
 * para simplificar essas duas propriedades existe o grid-area. Ele recebe 5 valores:
 
 -> grid-area: row-start/column-start/row-end/column-end;
+
+  -----------------------------------
+Capítulo 28 Aula 30 – Desafio: Criando um Layout de Site com CSS Grid
+-----------------------------------
+
+* Uma boa práatica na hora de criar uma interface de um site é desenhando e sempre colocando no cando superior esquerdo a numeração da linha / coluna. da mesma forma no canto inferior direito, com o valor final de linha / valor final de coluna.
+
+ATALHO DE CRIAÇÃO DE CONTEÚDO:
+
+-para criar um header já pré configurado com uma classe chamada 'caixa' e um id chamado 'topo', use o atalho:
+
+     header.caixa#topo  -> esse comando cria um header com uma classe chamada 'caixa' e tambem com um id chamado "topo"
+
+RELEMBRANDO
+
+box-sizing: border-box; faz com que a borda faça parte do corpo do elemento.
+
+* Para que um conteiner ocupe toda a tela e seja Responsivo, é necessário definir sempre o tamanho total da tela em width e heigth, e também utilizar na definição de linhas e colunas os valores em fração (fr).

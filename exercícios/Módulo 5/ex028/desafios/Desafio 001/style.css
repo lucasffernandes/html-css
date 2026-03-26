@@ -5,6 +5,7 @@
     grid-template: 85px 50px 250px 50px / 2fr 4fr 2fr;
     gap: 5px;
     text-align: center;
+    height: 100vh;
 }
 
 .topo {
