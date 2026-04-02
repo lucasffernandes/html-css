@@ -815,4 +815,10 @@ RELEMBRANDO
 
 box-sizing: border-box; faz com que a borda faça parte do corpo do elemento.
 
-* Para que um conteiner ocupe toda a tela e seja Responsivo, é necessário definir sempre o tamanho total da tela em width e heigth, e também utilizar na definição de linhas e colunas os valores em fração (fr).
+* Para que um conteiner ocupe toda a tela e seja Responsivo, é necessário definir sempre o tamanho total da tela em width e heigth, e também utilizar na definição de linhas e colunas os valores em fração (fr). 
+
+  -----------------------------------
+Capítulo 28 Aula 31 – Desafio: Criando um Layout de Site com CSS Grid
+-----------------------------------
+
+* quando se define grid-row ou grid column, o start ou o end são as linhas (lines) que são definidas.
