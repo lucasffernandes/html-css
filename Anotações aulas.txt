@@ -445,3 +445,380 @@ Capítulo 27 Aula 17 – Menu Responsivo com Flexbox e Media Queries na Prática
 -----------------------------------
 Capítulo 27 Aula 17 – Conteúdo flexível apenas com Flexbox (parte 1)
 -----------------------------------
+
+-----------------------------------
+Capítulo 27 Aula 18 – Conteúdo flexível apenas com Flexbox (parte 2)
+-----------------------------------
+
+-----------------------------------
+Capítulo 28 Aula 19 – O que é Grid Layout?
+-----------------------------------
+
+* tem o objetivo parecido com o flex-box, trazer responsividade a um site. (Ou criar um site Responsivo)
+
+* existem situações que deverá utilizar grid Layout, e existe situações que será necessário utilizar flexbox
+
+* O manual oficial do Grid Layout está no W3C.
+
+* O grid layout nasceu com o objetivo de se criar toda a interface visual de site, facilita esse processo com o posicionamento de elementos.
+
+* nesse modelo, os elementos filhos vão ser posicionados livremente sendo eles definidos com dimenções flexíveis ou não.
+
+* Grid LAYOUT, Propoe a criação de sites com a idéia de linhas e grades (Parecido com grades de uma planilha).
+
+
+-----------------------------------
+Capítulo 28 Aula 19 – A Anatomia de um Grid
+-----------------------------------
+
+line-grow / line-greed, podem ter tradução igual mas são coisas diferentes.
+
+* grid-layout tem o fundamento de container, sempre que for definir uma grade o tamanho será dado para essa grade em conteiner. 
+  - o tamanho desejado será definido para a propriedade: "grid container".
+
+* 'grid ITEM' é os pequenos quadrantes (item)  dentro de um conteiner.
+
+* grid track -> sequência de quadrantes de itens, seja em linha ou em coluna.
+
+* Row track -> trilha de linha
+
+* column track -> trilha de coluna
+
+* grid Lines -> são as linhas que separam os itens dentro de um conteiner grid
+
+  - são enumeradas e essa numeração começa da esquerda para a direita.
+
+* existe a enumeração de lines e de tracks
+
+* uma grid de 6x6 tem: 6 tracks de colunas de elementos, más tem 7 lines, que separam os elementos internos.
+
+* existem gride lines verticais e horizontais
+
+* As linhas verticais são feitas a enumeração de cima para baixo.
+
+* as enumeração de linhas pode ser feita em numeros negativos ou positivos.
+
+* uma área é um conjunto de itens (ou agrupamento de itens) delimitados em um conteiner
+
+* existe maneira de se configurar um espaço entre os itens dentro de um conteiner grid, esse espaço pode ser configurado com o: 'grid gap'
+
+  - modificando o gap entre os elementos não se muda o tamanho dos elementos, somente o tamanho dos gaps (espaçamento entre os elementos)
+
+* Conteiner é a estrutura mais inportante no Grid-layout.
+
+
+-----------------------------------
+Capítulo 28 Aula 20 – Propriedades de container para Grids (parte 1)
+-----------------------------------
+
+* display -> torna a propriedade um conteiner
+
+* grid-template-columns define a quantidade de colunas vão ter um grid
+
+* grid-template-rows -> define a quantidade de linhas que terá um grid
+
+* grid-gap -> propriedade que configura o espaçamento entre os itens de um conteiner.
+
+* Grid-layout é conhecido como uma estrutura bidimencional (e o flexbox unidimencional)
+
+* display: grid -> cria um grid conteiner (e consequentemente grid-itens no seu interior)
+
+  - somente com essa configuração nada muda, pois o padrão de criação dessa propriedade grid é definir um conteiner de uma coluna de multiplas linhas.
+
+* grid-template-columns: auto auto; -> permite uma configuração mais detalhada de colunas em um grid conteiner
+
+   - com esse valor padrão (auto auto), ele define a quantidade de colunas padrão (2), e também a quantidade padrão de linhas (o quanto couber na altura do elemento)
+
+   - ordem de elementos:   A   B   
+                           C   D
+                           E   F
+
+   - Para criar uma grade com 3 colunas basta adicionar mais um valor 'auto' a essa propriedade.
+
+    - EX:  grid-template-columns: auto auto auto;
+     
+    - ordem de elementos:   A   B  C 
+                            D   E  F
+                           
+ * Como o valor colocado foi 'auto', então a largura dos elementos serão configuradas automaticamente, todos os itens terão a mesma largura.
+
+
+* Grid-template-rows: 100px 100px 100px; -> configura os três elementos da coluna A B C tenham 100px de ALTURA. 
+
+obs: 
+
+* grid-template-columns alem de definir a quantidade de colunas, define tbm a largura dos elementos.
+
+
+* Grid-template-rows -> além de definir a quantidade de linhas define tambem a altura dos elementos.
+
+* grid-gap: 20px; -> define os espaçamentos verticais e hozontais dos elemtos.
+
+  - também pode ser configurado de maneira diferente os espaços verticais e horizontais com esse elemento
+
+
+-----------------------------------
+Capítulo 28 Aula 21 – CSS Grid Layout na prática (parte 1)
+-----------------------------------
+
+Atalhos importantes:
+
+ * Para criar uma div nomeada com o nome de uma classe -> div.nome
+
+ * Para criar várias vezes um mesmo elemento, basta adicionar na frente o símbolo de '*' asterísco.
+
+ * grid-gap é apartir de agora uma propriedade obsoleta, o nome foi abreviado para -> gap
+
+ * Para ver os índices numéricos das linhas de um conteúdo grid basta abrir o inspecionador de códigos do site (Atalho: contrw + shift + c), e na classe do conteiner desejado nos elementos de estilo, clique na descrição: 'grid'.
+
+   - é possível também fazer testes de alinhamento de ítens de um conteiner com o recurso do dev tools, basta procurar em estilos o conteiner desejado e à frente do: display:grid, existe um elemento clicável que dá várias opções de alinhhamento pré-configurado.
+
+-----------------------------------
+Capítulo 28 Aula 22 – Propriedades de container para Grids (parte 2)
+-----------------------------------
+
+* Para alinhar itens (Em grid layout):
+
+  - align-items         -> alinhamento vertical
+  - justify-items       -> alinhamento horizontal
+
+* Para alinhar conteúdo:
+  - align-content       -> alinhamento vertical
+  - justify-content     -> alinhamento horizontal
+
+* o padrão de valor para a propriedade alignt-content é 'stretch', com esse valor, os itens são esticados caso o conteinter seja alterado
+
+    - com o valor 'start' o conteúdo vai ser colado na parte de cima do elemento.
+
+    - 'center' -> é o valor que centraliza os elementos ao centro (verticalmente)
+
+    - 'end' -> é o valor que cola o conteúdo no final do elemento (na parte de baixo)
+
+
+* O valor padrão para a propriedade justify items é o 'stretch'
+que faz com que os elementos estiquem de acordo com as altrerações feitas no conteiner principal.
+  
+   - o valor 'start' coloca os elementos no canto esquerdo do elemento
+
+   - o valor center centraliza os elementos horizontalmente
+
+   - o valor 'end' coloca os itens no canto esquerdo desse elemento.
+
+   - O valor 'space-between' coloca o primeiro elemento no centro e cola o restante nas extermidades
+
+   - 'space-evenly' vai ajustar os elementos pelo espaço restante entre eles
+
+   - space-around vai ajustar os elementos de acordo com o espaço horizontal que eles possuem
+
+-----------------------------------
+Capítulo 28 Aula 23 – CSS Grid Layout na prática (parte 2)
+-----------------------------------
+
+* Para "CONTEÚDO" existem valores que vão além do 'start','End' e 'center' para as propriedades de conteúdo Align-content / justify-content. Esses valores são:
+
+ - space-between / space-evenly e space-around.
+
+ - conteúdo já explicado acima.
+
+-----------------------------------
+Capítulo 28 Aula 24 – Propriedades de container para Grids (parte 3) 
+-----------------------------------
+
+********** SIMPLIFICAÇÕES ***********
+
+* Conteiner só se torna conteiner se estiver com a propriedade Display:grid
+
+* grid-auto-row: 100px -> é uma propriedade simplificadora que torna todo elemento inserido em um conteiner com o tamanho de 100px
+
+  - Pois caso se for definido uma quantidade exata de linhas com a propriedade 
+   grid-template-rows: 100px 100px 100px e eventualmente for inserido um elemento e que desça para uma 4° linha, essa linha criada não terá configuração de tamanho e ficará diferente das outras.
+
+* o mesmo ocorre com a propriedade simplificadoera grid-auto-column: 100px
+   Ela cria uma pre configuração de 100px para toda coluna que for acrescentada
+
+* é chamado de grid "explícito" todas as configurações que foram declaradas, e de grid "implícito" todas as configurações que vao afetar o que não foi explícito no código.
+
+* place-items -> simplifica as configurações de: align-items / justify-items
+
+EX:
+align-items:     stretch    ->
+justify-items:   center
+
+->       =  place-items: stretch center;
+
+* Place-content -> simplifica as configurações das propriedades align-content / justify-content
+
+EX:
+align-content:     start    ->
+justify-content:   end
+
+->  = place-content: start end;
+
+* grid-template-rows: 100px 100px 100px e grid-template-colums: auto auto auto 
+podem ser simplificados com: 
+grid-template: 100px 100px 100px / auto auto auto;
+
+   - sempre na ordem linha / coluna
+
+-----------------------------------
+Capítulo 28 Aula 25 – Propriedades de container para Grids (parte 4) 
+-----------------------------------
+
+***** SIMPLIFICAÇÕES (Part 2)*****
+
+* Função para simplificar:
+
+ - repeat() -> essa função recebe dois valores, o primeiro é a quantidade de vezes que deseja repetir o valor, e o segundo valor é a característica do item.
+
+EXEMPLO DE IMPLEMENTAÇÃO:
+
+* Grid-template-columns: auto auto auto;  ->
+                   =
+grid-template-columns: repeat(3, auto);
+
+
+* grid-template-rows: 100px 100px 100px; ->
+                   =
+grid-template-rows: repeat(3, 100px)
+
+AINDA OUTRO EXEMPLO:
+
+* grid-template: 100px 100px 100px / auto auto auto;       =
+
+grid-template: repeat(3,100px) / repeat(3, auto);
+
+--------------      ---------------
+
+UNIDADE FRACIONAL
+
+* grid-template-columns: 1fr 1fr 1fr;
+
+  - cria um conteiner de tres elementos de tamanhos iguais, divididos em 3 partes.
+
+  - se o conteiner tiver 1500px, cada fração nesse caso terá 500px.
+
+  - é melhor usar fração no lugar do valor 'auto'.
+
+* aumentando o valor das frações você consegue aumentar as vezes que o item vai ter de tamanha diferente que os outros elementos.
+
+EXEMPLO: 
+
+grid-template-columns: 1fr 2fr 1fr;
+
+-> nesse exemplo o item do meio vai ter 2x mais o tamanho do que os outros elementos
+
+   - nesse caso, o valor foi dividido em 4 frações.
+
+* caso o grid-template-columns: 100px 20% 1fr 1fr receber valors em porcentagem como esse, se trada de 20% da larrgura do conteiner.
+
+
+-----------------------------------
+Capítulo 28 Aula 26 – CSS Grid Layout na prática (parte 3) 
+-----------------------------------
+
+* A propriedade 'grid-auto-flow' organiza os elementos dentro do conteiner
+  
+  - quando recebe o valor column ela organiza os elementos em forma de colunas.
+
+  - quando recebe o valor 'row' ele organiza os elmentos em linhas.
+
+* caso for definido o auto-flow como coluna, os elementos que forem criados e acrescentados, receberam o valor padrão de stretch, consequentemente eles esticaram e diminuirão de acordo com o tamanho do conteiner.
+
+  - para mudar isso, basta criar o grid-auto-colunm: 120px (ou o tamanho em pix que desejar) para que seja criado em maneira automática os elementos que forem acrescentados.
+
+  -----------------------------------
+Capítulo 28 Aula 27 – Propriedades de itens para Grids (parte 1)
+-----------------------------------
+
+DEFININDO UMA ÁREA
+
+* grid-row-start: define a linha de início da área
+
+* grid-row-end: define a linha final da área
+
+* grid-colum-start: define a coluna inicial da área
+
+* grid-column-end: define a coluna finak da área
+
+  -----------------------------------
+Capítulo 28 Aula 28 – Mão na Massa: Posicionando Itens no Grid Layout
+-----------------------------------
+
+* áreas são grupos de items
+
+* Na prática, as alterações de posição nas definições de área para números negativos não funcionou.
+
+  -----------------------------------
+Capítulo 28 Aula 29 – CSS Grid: Shorthands para Itens
+-----------------------------------
+
+ Uso de span em definições de áreas em grid-layout
+
+ * pode também pode ser usado para expandir o tamanho de áreas em grid-layout
+
+  EXEMPLO:   
+  
+  em vez de -> grid-row-start: 1;
+               grid-row-end: 4;
+
+  posso usar -> grid-row-start: 1;
+                grid-row-end: span 3;
+  
+  - span significa expanção
+
+  - no lugar de definir quantas Lines contem todas as Rows, eu posso colocar span, que coloca a quantidade de linhas que terá o projeto.
+
+  SIMPLIFICANDO declarações
+
+* no lugar de 'grid-row-start' e 'grid-row-end' use:
+  grid-row: valor start / valor end
+   
+  EXEMPLO:   
+  
+  em vez de -> grid-row-start: 1;
+               grid-row-end: 4;
+
+  posso usar -> grid-row: 1 / 4;
+
+* da mesma forma com a propriedade grid-column-start / grid-column-end.
+
+ EXEMPLO:   
+  
+  em vez de -> grid-column-start: 1;
+               grid-column-end: 4;
+
+  posso usar -> grid-column: 1 / 4;
+
+
+ - quando se existe apenas um valor no grid-column / grid-row, é o primeiro a quantidade de linhas, já o segundo valor após o: "/" será o valor padrão de colunas que é auto (uma coluna somente)
+
+
+SIMPLIFICANDO grid-row e grid-column:
+
+* para simplificar essas duas propriedades existe o grid-area. Ele recebe 5 valores:
+
+-> grid-area: row-start/column-start/row-end/column-end;
+
+  -----------------------------------
+Capítulo 28 Aula 30 – Desafio: Criando um Layout de Site com CSS Grid
+-----------------------------------
+
+* Uma boa práatica na hora de criar uma interface de um site é desenhando e sempre colocando no cando superior esquerdo a numeração da linha / coluna. da mesma forma no canto inferior direito, com o valor final de linha / valor final de coluna.
+
+ATALHO DE CRIAÇÃO DE CONTEÚDO:
+
+-para criar um header já pré configurado com uma classe chamada 'caixa' e um id chamado 'topo', use o atalho:
+
+     header.caixa#topo  -> esse comando cria um header com uma classe chamada 'caixa' e tambem com um id chamado "topo"
+
+RELEMBRANDO
+
+box-sizing: border-box; faz com que a borda faça parte do corpo do elemento.
+
+* Para que um conteiner ocupe toda a tela e seja Responsivo, é necessário definir sempre o tamanho total da tela em width e heigth, e também utilizar na definição de linhas e colunas os valores em fração (fr). 
+
+  -----------------------------------
+Capítulo 28 Aula 31 – Desafio: Criando um Layout de Site com CSS Grid
+-----------------------------------
+
+* quando se define grid-row ou grid column, o start ou o end são as linhas (lines) que são definidas.
