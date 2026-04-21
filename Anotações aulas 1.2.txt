@@ -822,7 +822,3 @@ Capítulo 28 Aula 31 – Desafio: Criando um Layout de Site com CSS Grid
 -----------------------------------
 
 * quando se define grid-row ou grid column, o start ou o end são as linhas (lines) que são definidas.
-
-  -----------------------------------
-Capítulo 29 Aula 32 – Criando portifólio do zero
------------------------------------
