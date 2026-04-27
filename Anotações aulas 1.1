@@ -105,10 +105,20 @@ INSERIR AUDIOS
 <audio>  ->  tag que delimita o espaço do corpo html que será dedicado a exibição/configuração de AUDIOS no projeto
 
 ---- Parâmetros que ficam dentro da tag audio ------
+
 loop -> não recebe valor, serve para deixar o audio em loop enquanto a página estiver aberta
-autoplay ->
+
+autoplay -> reproduz o audio em loop infinito equando a página estiver aberta
+
 preload=""  -> parâmetro que coloca dentro da tag audio, e geralmente tem o valor "metadata"
+
 controls -> parâmetro que não recebe valor, serve para adicionar controles(como pause e play) para o audio adicionado
+
+metadata -> carrega apenas informações do arquivo (Ex: tamanho,tempo,direitos autorais...)
+
+none -> não carrega nada até que o usuário aperte o play no audio
+
+auto (valor padrão) -> carrega o arquivo de audio por inteiro mesmo que o usuário não aperte o play.
               
 -------- para tocar audios na página web --------
 
@@ -121,10 +131,71 @@ type=''  ->  define o tipo do audio selecionado (ex: "audio/mpeg") / fica dentro
 
 -------- Para baixar audios ----------
 
+para disponibilizar um audio para dowload basta uzar 3 parâmetros na tag de audio:
+
+- href='local do audio armazenado'
+- dowload='nome_do_arquivo.extensão'
+- type='audio/mpeg' -> tipo específico da extensão
 
 
+CÓDIGO COMPLETO DE EXEMPLO:
 
 
+<audio preload="metadata" controls autoplay loop>
+    
+  <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+  <source src="midia/guanacast-33.ogg" type="audio/ogg">
+  <source src="midia/guanacast-33.wav" type="audio/wav">
+
+  <p>
+    Seu navegador não suporta áudio.
+    <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3">
+      Clique aqui para baixar o áudio
+    </a>
+  </p>
+
+</audio>
+
+INSERINDO VÍDEOS EM UM SITE
+
+------  LOCALMENTE
+
+* Para se inserir vídeos dentro de um site existe a tag <video>, que pode receber como parâmetros:
+
+  width -> define a largura do vídeo
+
+  poster -> define uma imagem que vai aparecer na capa enquanto o vídeo não é reproduzido
+
+  controls -> carrega opções de controles para a interação do usuário com o vídeo
+
+  autoplay -> reproduz o vídeo automaticamente, assim que o usuário abrir a página web.
+
+* Dentro da tag video fica a tag <source> que é responsável em configurar o video na tag <video>. <source> pode receber valores como: 
+
+  src='' -> recebe a localização do video
+  type='' -> recebe o formato do vídeo
+
+
+------ exemplo de código -----
+
+<video width="600" poster="thumbs.jpg" controls autoplay>
+    <source src="meu-video.webm" type="video/webm">
+    <source src="meu-video.mp4" type="video/mp4">
+    <source src="meu-video.ogv" type="video/ogg">
+    <p>Infelizmente seu navegador não consegue carregar o vídeo.</p>
+</video>
+
+* formatos de vídeos suportáveis
+
+  - mpeg,webm e ogg
+
+-------- inserindo vídeos externos
+
+* iserindo videos localmente torna o serviço de hospedagem caro devido o alto tráfego de dados que o acesso simúltâneo de um video localmente acarreta
+
+* para adicionar videos externos basta ir na opção de incorporação que todo vídeo do youtube tem e copiar o código e colar no projeto
+
+plataformas que permitem a incorporação de videos: youtube, vimeo.
 
 
 
