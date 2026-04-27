@@ -73,3 +73,61 @@ LINKS E COMPORTAMENTO DAS PÁGINAS
  - author -> indica que é um link para o site do autor do artigo
  - nofollow -> indica que é um site não endoçado, usado para divulgação de sites sem permissão de divulgação, com esse link provamos que não existe ligação com o site em questão.
 
+
+DOWLOADS
+
+* Para disponibilizar um arquivo para dowload em uma página web é necessário usar uma ancora (a), e dentro da âncora os parâmetros:
+
+  - href='' -> tendo como valor a localização do documento que será disponibilizado como dowload
+  - dowload="meuLivro.pdf" -> recebe como valor o nome do arquivo e a extenção
+
+types mais usadas para dowload:
+
+-> aplication/zip            -> video/jpeg           -> text/html            -> audio/aac 
+-> text/css                  -> audio/mpeg           -> text/javascrip       -> font/ttf
+-> video/mp4                 -> image/jpeg           -> video/h264           -> image/png 
+
+
+
+INSERIR IMAGENS 
+
+* <picture> -> tag html que delimita o local do body que será inserida a imagen
+
+  <img> -> tag para inserir imagens
+  
+  src='...' -> parâmetro html que recebe como valor a localização da imagem que será exibida
+
+  alt='' -> recebe como valor uma descrição da imagem selecionada em src, essa descrição aparece caso a imagem não seja carregada
+
+
+INSERIR AUDIOS
+
+<audio>  ->  tag que delimita o espaço do corpo html que será dedicado a exibição/configuração de AUDIOS no projeto
+
+---- Parâmetros que ficam dentro da tag audio ------
+loop -> não recebe valor, serve para deixar o audio em loop enquanto a página estiver aberta
+autoplay ->
+preload=""  -> parâmetro que coloca dentro da tag audio, e geralmente tem o valor "metadata"
+controls -> parâmetro que não recebe valor, serve para adicionar controles(como pause e play) para o audio adicionado
+              
+-------- para tocar audios na página web --------
+
+<source> ->  tag para inserir audio para ser tocado
+src=''   ->  localização do audio desejado / fica dentro da tag source
+type=''  ->  define o tipo do audio selecionado (ex: "audio/mpeg") / fica dentro da tag source
+
+- necessário colocar 3 opções de audio, para que se caso algum o audio não for reconhecido pelo navegador os outros reconheçam
+- depois das 3 opções é aconselhavel deixar a opção de dowload do audio, aí se caso o audio não puder ser ouvido nas 3 opções de audio o usuário possa baixar o audio para que possa ouvi-lo 
+
+-------- Para baixar audios ----------
+
+
+
+
+
+
+
+
+
+  
+
