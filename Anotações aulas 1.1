@@ -1,4 +1,5 @@
-Listas Ordenadas
+LISTAS ORDENADAS
+
 
 * Listas ordenadas tem a sintaxe <ol>, e servem para organizar itens
 
@@ -32,7 +33,10 @@ Listas Ordenadas
   -Mesmo se for definido em algarismo romanoo, o start tem que ser sempre em número.
 
 
+
 LISTAS NÃO ORDENADAS 
+
+
 
 * São listas com marcadores
 
@@ -43,16 +47,24 @@ LISTAS NÃO ORDENADAS
  -circle
  -square
 
-LISTAS DE definição
+
+
+
+LISTAS DE DEFINIÇÃO 
+
+
 
 * São listas que são suspensas quando clicadas em alguma descrição
  
   <DL> -> define o inicio e o fim de uma lista de definição
-  <DT> -> define o testo a ser clicado
+  <DT> -> define o texto a ser clicado
   <DD> -> define a descrição 
 
 
+
+
 LINKS E COMPORTAMENTO DAS PÁGINAS
+
 
 * target='' -> usado dentro da tag de ancoragem <a>, serve para descrever o comportamento de liks depois de clicados.
  
@@ -74,6 +86,8 @@ LINKS E COMPORTAMENTO DAS PÁGINAS
  - nofollow -> indica que é um site não endoçado, usado para divulgação de sites sem permissão de divulgação, com esse link provamos que não existe ligação com o site em questão.
 
 
+
+
 DOWLOADS
 
 * Para disponibilizar um arquivo para dowload em uma página web é necessário usar uma ancora (a), e dentro da âncora os parâmetros:
@@ -89,6 +103,7 @@ types mais usadas para dowload:
 
 
 
+
 INSERIR IMAGENS 
 
 * <picture> -> tag html que delimita o local do body que será inserida a imagen
@@ -98,6 +113,8 @@ INSERIR IMAGENS
   src='...' -> parâmetro html que recebe como valor a localização da imagem que será exibida
 
   alt='' -> recebe como valor uma descrição da imagem selecionada em src, essa descrição aparece caso a imagem não seja carregada
+
+
 
 
 INSERIR AUDIOS
@@ -124,7 +141,7 @@ auto (valor padrão) -> carrega o arquivo de audio por inteiro mesmo que o usuá
 
 <source> ->  tag para inserir audio para ser tocado
 src=''   ->  localização do audio desejado / fica dentro da tag source
-type=''  ->  define o tipo do audio selecionado (ex: "audio/mpeg") / fica dentro da tag source
+type=''  ->  define o tipo do audio selecionado (ex: caso o audio seja em MP3: "audio/mpeg" / ex: caso o audio seja em OGG: "audio/ogg") / isso fica inserido dentro da tag source
 
 - necessário colocar 3 opções de audio, para que se caso algum o audio não for reconhecido pelo navegador os outros reconheçam
 - depois das 3 opções é aconselhavel deixar a opção de dowload do audio, aí se caso o audio não puder ser ouvido nas 3 opções de audio o usuário possa baixar o audio para que possa ouvi-lo 
@@ -138,7 +155,7 @@ para disponibilizar um audio para dowload basta uzar 3 parâmetros na tag de aud
 - type='audio/mpeg' -> tipo específico da extensão
 
 
-CÓDIGO COMPLETO DE EXEMPLO:
+  CÓDIGO COMPLETO DE EXEMPLO:
 
 
 <audio preload="metadata" controls autoplay loop>
@@ -156,7 +173,11 @@ CÓDIGO COMPLETO DE EXEMPLO:
 
 </audio>
 
+
+
+
 INSERINDO VÍDEOS EM UM SITE
+
 
 ------  LOCALMENTE
 
@@ -198,6 +219,8 @@ INSERINDO VÍDEOS EM UM SITE
 plataformas que permitem a incorporação de videos: youtube, vimeo.
 
 
+
+
 INSERINDO EMOGIS E SÍMBOLOS EM UM SITE
 
 
@@ -214,11 +237,15 @@ INSERINDO EMOGIS E SÍMBOLOS EM UM SITE
   - site para encontrar símbolos : https://www.w3schools.com/charsets/ref_utf_symbols.asp
 
 
+
+
 EMOGIS
 
  - Tem caracteres começando com "&hx"
  - Exemplo: &hx1f596
  - site para encontrar emogis: https://emojipedia.org/
+
+
 
 
 FORMATOS DE IMAGENS
@@ -241,6 +268,8 @@ FORMATOS DE IMAGENS
   - media   -> 700px
   - grande  -> 1000px
 
+
+
 FAVICONS
 
   - <img> -> tag usada para inserção 
@@ -248,7 +277,7 @@ FAVICONS
   - alt   -> propriedade da tag <img>, armazena um texto descritivo e esse texto é exibido caso a imagem não consiga ser renderizada pelo navegador
 
 
-INSERINDO FAVICONS EM UM SITE
+ * Inserindo favicons em um site:
 
 - favicon -> favorite icons
 - localizado abaixo do título, no header do projeto, adicionado com um link de descrição favicon
@@ -258,7 +287,10 @@ INSERINDO FAVICONS EM UM SITE
   -> https://www.iconarchive.com/
 
 
+
+
 FORMATAÇÕES SEMÂNTICAS EM HTML (NÃO SEMANTICAS SÃO FEITAS SOMENTE COM CSS)
+
 
  * Destaques de texto:
    
@@ -285,7 +317,118 @@ FORMATAÇÕES SEMÂNTICAS EM HTML (NÃO SEMANTICAS SÃO FEITAS SOMENTE COM CSS)
    <sup> -> eleva uma numeração em html
     -Exemplo:  x<sup>20</sup>+ 3   ->  x²° + 3
 
+ * Texto em código:
+   <code> -> exite um texto em código
+   <pre>  -> tag "pai" da tag <code>, para funciona a tag 'code' precisa estar dentro dela
+
+ * Citações simples:
+   <Q> -> coloca aspas("") no texto html
+
+ * Citações completas:
+   <blockquote> -> destaca uma citação completa de um autor no texto html
+   cite -> parâmetro que tem que ter dentro dessa tag para receber o link do site do auto/citação
+
+ * Abreviações:
+   <abbr> -> aplica abreviação a palavra desejada
+   title  -> parâmetro que fica dentro da tag e recebe como valor a explicação da sigla definida
+
+ * Texto invertido:
+   <bdo> -> aplica a inversão de sentido nas palavras do texto em html
+   dir  ->  este parâmetro (que fica dentro da tag de parágrafo (p)) define a direção dessas palavras
+    valores para esse parâmetro:
+     "rtl" (rigt to left) -> com esse valor o parâmetro 'dir' define a direção das palavras do texto na ordem da direita para a esquerda.
+   
+      exemplo: <bdo>
+                  <p dir='rtl'> texto invertido </p>
+                </bdo>
+    
+
+
+ 
+PSICOLOGIA DAS CORES:
+
+
+
+ --- COLAR IMAGEM (local: imagens/Cores frias e quentes)--- 
+
+ * cor primária:
+  - cores primárias são: amarelo, vermelho e azul
+
+ * cor secundária:
+  - verde, laraja, roxo
+ 
+ * cor terceára:
+  - amarelo-esverdeado, amarelo-alarajado, vermelho-aralanjado, vermelho-arroxeado, azul-arroxeado, azul-esverdeado.
+
+ * Cores análogas:
+  - cores que se parecem umas com as outras
+
+ * cores complementáres:
+  - cores que contrastam entre si 
+  - oposto ao círculo cromático
+  - é utilizado para criar combinação de cores
+
+ * Cores tríades:
+  - amarelo,azul e vermelho
+
+ * Cores em quadrado:
+  - tecnica onde escolhe uma cor aleatóreamente no círculo cromático
+  - e posteriormente pula duas casas de cores escolhendo a terceira seguinte até formar as 4 cores.
+
+  --- COLAR IMAGEM (local: imagens/Cores em quadrado)--- 
+
+ * Cores tetrádicas:
+  - técnica que escolhe duas cores qualquer e depois encontra as duas cores opostas, formando a palheta de 4 cores
+
+ --- COLAR IMAGEM (local: imagens/Cores tetrádicas)--- 
+ 
+ * Monocromia:
+  - utiliza-se somente uma cor e faz alterações na mesma (como: saturação e brilho), para que com base nessas alterações form-se o restante das cores da palheta
+
+ * Dicas:
+  - Ao criar um site as cores a paleta de cores geralmente é com base na cor primária da logo da organização
   
+  - Paletas de cores geralmente são de 3 até 5 cores
+
+
+ --> FERRAMENTAS PARA CRIAÇÃO DE PALHETA DE CORES
+
+  * Adobe color 
+  * Palotton.com
+  * Coolors
+
+
+
+ GRADIENTE EM CSS
+
+
+* Gradiente de cores é geralmente feito com no máximo duas cores
+
+* linear-gradiente() -> propriedade css que define gradiente de cores
+ - valores dessa propriedade:
+  -> to rigth
+  -> to left
+  -> to top 
+  -> to bottom(baixo)
+
+* definindo degradê com ângulo
+
+ implementação: linear-gradiente(45deg, #34986f)
+
+ - o valor de degradê pode ser definido como negativo também
+
+
+
+BARRA DE ROLAGEM
+
+
+
+ * Barra de rolagem indesejada:
+  - background-attachment:'fixed' -> concerta barra de rolagem indesejada no background de um site 
+  
+
+
+
 
 
 
