@@ -437,12 +437,83 @@ BARRA DE ROLAGEM
 
  * Barra de rolagem indesejada:
   - background-attachment:'fixed' -> concerta barra de rolagem indesejada no background de um site 
+
+
+
+SOMBREAMENTO -> CRIANDO SOMBREAMENTO
+
+
+
+ * Box-shadow -> configura sobreamento em um elemento. Seu valor é configurado em pixels
+  - shorthand:  1° quantidade de sombra para o lado
+               2° quantidade de sombra para baixo               
+               3° quantidade espalhamento da sombra
+               4° cor (e/ou) transparência
+  - implementação:
+         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+ * Text-shadow -> configura sombreamento em elementos textuais
+  - shorthand: 1° quantidade de sombra para o lado
+               2° quantidade de sombra para baixo               
+               3° quantidade espalhamento da sombra
+               4° cor (e/ou) transparência
+  - implementação:
+         text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   
 
 
 
+FONTES
 
 
+* Ao confirar fontes normais em um site deve-se definir 3 opções, pois se caso alguma não for carregada pelo navegador tenha mais opções para o site não ficar sem fonte nenhuma.
+   EXEMPLO: Arial, Helvetica, Sans-serif
 
+* Medidas absolutas para definir tamanhos de fontes:
+
+- pixels (px) -> forma correta definida pela w3c
+- centímetro (dm)
+- milímetro (mm)
+- polegada (in)
+- ponto (pt)
+- paica (pc)
+
+* Medidas relativas para definir tamanhos de fontes:
+- altura M (em)
+- altura X (ex)
+- altura m relativa ao root (rem)
+
+ font-size -> propriedade para se definir tamanho das fontes
+
+* Pesos de fonte:
+- lighter (mais magra) 
+- normal (padrão)
+- bold (negrito)
+- bolder (extrabold)
+
+* confirgurando peso da fonte em forma numérica:
+- 100 mais fino
+- 900 mais grosso
+
+font-style -> configura estilos de FONTE, 
+exemplo de valores: italic / normal / oblique
+
+text decoration -> configura decoração do texto como um todo, 
+exemplo de valores: underline / overline /  line-througth
+
+FONTES EXTERNAS
+
+* Exemplos de locais para conseguir fontes externas para site: google fonts
+  -basta colocar o link do site que vai utilizar as fontes no começo do codigo css
+
+Recomendações:
+  -importação de fontes de sites externos (e também as demais importações) devem ser as primeiras coisas a serem definidas em um código CSS
+  -geralmente se utiliza em um site no máximo 3 fontes:
+   1° para grandes títulos
+   2° para destaque
+   3° para fonte normal
   
+FONTES BAIXADAS
+
+
 
