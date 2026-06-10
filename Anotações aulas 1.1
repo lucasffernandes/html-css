@@ -513,8 +513,148 @@ Recomendações:
    1° para grandes títulos
    2° para destaque
    3° para fonte normal
+
+
   
-FONTES BAIXADAS
+FONTES EXTERNAS BAIXADAS
 
 
 
+* usa-se fontes externas quando a fonte não existe no google fonts
+
+* antes de baixar e implementar fontes externas é necessário verificar se a fonte possui letras acentuadas, pois nem todas possuem esse recurso.
+
+Exemplo de site para baixar fontes externas:
+
+ -> dafont.com
+
+Recomendações:
+
+* é uma boa prática colocar a fonte em uma pasta denominada "fontes" para que armazene fontes baixadas
+
+Formatos de fontes mais usados: 
+
+* TTf (Truetype)
+* OTF (Opentype)
+
+outros formatos:
+
+* embedded-Opentype
+* Truetype-aat (Apple Advanced Typography)
+* SVG
+
+IMPLEMENTAÇÃO 
+
+*Implementa-se fontes externas criando um seletor de regra -> @font-face
+
+EXEMPLO:
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../fontes/MinhaFonte.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MinhaFonte', Arial, sans-serif;
+}
+
+
+
+CAPTURANDO FONTES USADAS EM UM SITE
+
+
+Exemplo de ferramenta usada:
+
+Font ninja -> é uma extensão de navegador que posicionando o cursor em uma fonte desejada essa fonte é revelada
+
+
+Sites que revelam fontes contidas em imagems: 
+
+* Whatfontis.com 
+* fontsquirrel.com
+* myfonts.com
+
+OBS: "podem não sem muito precisos"
+
+
+
+
+PSEUDO CLASSES EM CSS
+
+
+Exemplo de Pseudo classe: ":hover"
+
+* essa pseudo-classe configura uma ação caso o cursor fique em cima do elemento html.
+
+// nesse exemplo abaixo a div html fica azul quando o cursor ficar posicionado em cima dela
+
+Exemplo de implementação: 
+
+  div:hover {
+    background-color: blue;
+  }
+
+
+* Outros exemplos de pseudo-classes:
+
+:active   -> se o elemento for ativo
+:checked  -> se ele estiver marcado
+:disabled -> se o elemento estiver desmarcado
+:enabled  -> se o elemento estiver marcado
+:empty    -> se o elemento estiver vazio
+...
+
+
+
+PSEUDO ELEMENTO EM CSS
+
+
+
+* pseudo-elemento se inicia com "::"
+
+Exemplo de pseudo elemento: ::Before / ::after
+
+
+implementação:
+
+
+<p>Lucas</p>
+
+
+p::before {          // Before acessa o conteúdo inicial de um elemento html
+  content:'Nome:'    // content:'' geralmente é utilizando junto com esses pseudo-elementos, ele serve para inserir conteúdos em HTMl
+}
+
+-> nesse caso, é adicionado em HTML ante de Lucas a descrição "Nome:"
+
+
+
+SELETORES PERSONALIZADOS
+
+
+#  -> ID
+.  -> Classe
+:  -> pseudo-classe
+:: -> pseudo-elemento
+>  -> children
+
+
+
+TIPOS DE TAGS HTML
+
+
+* box-level:
+
+<div>          <header>        <footer>
+<h1>-<h6>      <nav>           <form>
+<p>            <article>       <video>
+<main>         <aside>
+
+* inline-level: 
+
+<span>         <strong>        <button>
+<a>            <em>            <input>
+<code>         <sub-sup>       <select>
+<small>        <label>
